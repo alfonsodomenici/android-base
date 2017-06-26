@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it.ghiglienodigital.docandroid.esempio2activity.ActivityB">
+
+    <TextView
+        android:id="@+id/domanda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendo domanda..."
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="59dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/risposta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:ems="10"
+        android:hint="inserisci la risposta.."
+        android:inputType="textMultiLine"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/domanda" />
+
+    <Button
+        android:id="@+id/cmdInvia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Invia Risposta"
+        android:onClick="onInviaRisposta"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/risposta" />
+</android.support.constraint.ConstraintLayout>
